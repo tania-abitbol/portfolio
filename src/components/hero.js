@@ -3,7 +3,6 @@ import Styled from "styled-components"
 import heroImage from "../images/hero-image.png"
 import nameImage from "../images/name.png"
 
-
 const HeroContainers = Styled.div`
  background: black; 
  height:100vh;
@@ -14,6 +13,8 @@ const HeroContainers = Styled.div`
   `
 export const Nav = Styled.div`
   height:100%;
+align-items:center;
+
   width:125px;
   border-right:2px solid white;
   display:flex;
@@ -32,6 +33,8 @@ export const Nav = Styled.div`
   `
 export const Link = Styled.a`
 color:white;
+font-family: 'Montserrat', sans-serif;
+font-size:14px;
 
 `
 const HeroRightSide = Styled.div`
@@ -45,6 +48,7 @@ justify-content: space-between;
 &>div:last-child{
   align-self:flex-end;
 }
+
 `
 export const Hero = () => (
   <HeroContainers>

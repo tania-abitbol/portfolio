@@ -1,6 +1,11 @@
 import eyesImage from "../../images/eyes.png"
 import girlImage from "../../images/littke-girl.png"
 import charactersImage from "../../images/persos.png"
+import catImage from "../../images/renard.png"
+import aquariumImage from "../../images/aquarium.png"
+import flowerImage from "../../images/fleur.png"
+import bearImage from "../../images/ours.png"
+import phoneImage from "../../images/phone.png"
 
 export const articleData = [
   {
@@ -29,7 +34,36 @@ export const articleData = [
     articleTitle: "Dans le domaine du code :",
     articleText:
       "-HTML/CSS, j’ai eu l’occasion de plus des cours, m’occupper de la partie integration dans plusieurs de mes projets de groupe.J’utilise comme pré processeur SASS.-JavaScript , maitrise du Dom anssi que l’optimisation du code de maniere à l’aleger au maximum.\r\n\n -PHP, connaissances des bases et ce langage m’interesse.\r\n\n  -GitHub, bonne maitrise de cet outils que j’ai eu l’occasion d’utiliser beaucoup de fois durant l’année.(bonne maitrise du terminal)-Arduino, durant mon lycée j’ai eu l’occasion d’automatiser une piscine avec une carte Arduino et élaborer la conception d’une application pour que tout cela fonctionne.",
-    articleImage: eyesImage,
+    articleImage: aquariumImage,
     blackBoard: true,
+  },
+  {
+    title: " ",
+    articleText:
+      "-Figma, Avant tout projet, c’est sur ce logiciel que je m’occupe de la partie maquettage.Je maitrise des plugins et  le prototypage \r\n\n -Photoshop et Illustrator,Les cours durant toute l’année m’ont permis de maitriser ces logiciels.\r\n\n-Premiere pro, j’ai monter un mini film sur ce logiciel et des videos de maquillage artistique.",
+    articleImage: catImage,
+    blackBoard: true,
+  }, 
+   {
+    title: "Des projets réalisés ? ",
+    articleTitle: "Mon jeu vidéo codé en JavaScript",
+    articleText:
+      "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
+    articleImage:flowerImage,
+    blackBoard:false,
+  },
+   {
+    articleTitle: "Mon jeu vidéo codé en JavaScript",
+    articleText:
+      "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
+    articleImage:bearImage,
+    blackBoard:false,
+  }, 
+  {
+    articleTitle: "La refonte de la page Nespresso",
+    articleText:
+      "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
+    articleImage:phoneImage,
+    blackBoard:false,
   },
 ]

@@ -23,24 +23,39 @@ ${ifProp(
 const ArticleContainer = Styled.div`
 display:flex;
 align-items:center;
-
-height: 284px;
 width:100%;
 `
 const ArticleTitle = Styled.h1`
 font-size: 30px;
 text-align:center;
+font-family: 'Poiret One';
+
 `
 const ArticleText = Styled.div`
 flex:1;
 white-space: break-spaces;
+padding:100px;
 `
 
 const ArticleImage = Styled.div`
-flex:1;
 order:${props => (props.order === "true" ? 0 : 1)};
+
+`
+const ArticleAll = Styled.div`
+margin:20px 0;
+justify-content: space-between;
 `
 
+const ArticleLittleTitle = Styled.h2`
+font-family: 'Montserrat', sans-serif;
+font-size:20px;
+padding-bottom:10px;
+font-weight: bold;
+`
+
+const ArticleTextText = Styled.p`
+font-family: 'Montserrat', sans-serif;
+`
 export const Article = ({
   title,
   articleText,
@@ -51,17 +66,17 @@ export const Article = ({
 }) => (
   <ArticlesWrapper blackBoard={blackBoard}>
     <Line blackBoard={blackBoard} />
-    <div>
+    <ArticleAll>
       <ArticleTitle>{title}</ArticleTitle>
       <ArticleContainer>
         <ArticleImage order={order.toString()}>
           <img src={articleImage} />
         </ArticleImage>
         <ArticleText>
-          <h2>{articleTitle}</h2>
-          <p>{articleText}</p>
+          <ArticleLittleTitle>{articleTitle}</ArticleLittleTitle>
+          <ArticleTextText>{articleText}</ArticleTextText>
         </ArticleText>
       </ArticleContainer>
-    </div>
+    </ArticleAll>
   </ArticlesWrapper>
 )
