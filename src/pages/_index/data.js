@@ -43,27 +43,27 @@ export const articleData = [
       "-Figma, Avant tout projet, c’est sur ce logiciel que je m’occupe de la partie maquettage.Je maitrise des plugins et  le prototypage \r\n\n -Photoshop et Illustrator,Les cours durant toute l’année m’ont permis de maitriser ces logiciels.\r\n\n-Premiere pro, j’ai monter un mini film sur ce logiciel et des videos de maquillage artistique.",
     articleImage: catImage,
     blackBoard: true,
-  }, 
-   {
+  },
+  {
     title: "Des projets réalisés ? ",
     articleTitle: "Mon jeu vidéo codé en JavaScript",
     articleText:
       "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
-    articleImage:flowerImage,
-    blackBoard:false,
+    articleImage: flowerImage,
+    blackBoard: false,
   },
-   {
+  {
     articleTitle: "Mon jeu vidéo codé en JavaScript",
     articleText:
       "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
-    articleImage:bearImage,
-    blackBoard:false,
-  }, 
+    articleImage: bearImage,
+    blackBoard: false,
+  },
   {
     articleTitle: "La refonte de la page Nespresso",
     articleText:
       "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
-    articleImage:phoneImage,
-    blackBoard:false,
+    articleImage: phoneImage,
+    blackBoard: false,
   },
 ]
