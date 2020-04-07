@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import styled from "styled-components"
 
 const LoadingPage = styled.div`
@@ -8,7 +8,6 @@ const LoadingPage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 `
 
 const Counter = styled.div`
@@ -39,20 +38,19 @@ const LoadingBar = styled.hr`
 export const Start = props => {
   const [counter, setCounter] = useState(0)
 
-  const finishLoading = () => {
+  const finishLoading = useCallback(() => {
     props.parentCallback(false)
-  }
+  }, [props])
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCounter(counter + 1)
-      if (counter === 101) {
-        clearInterval(interval)
-        finishLoading()
-      }
-      console.log(counter)
+      setCounter(counter => counter + 1)
     }, 50)
-  }, [])
+    if (counter === 101) {
+      finishLoading()
+    }
+    return () => clearInterval(interval)
+  }, [counter, finishLoading])
 
   return (
     <LoadingPage>

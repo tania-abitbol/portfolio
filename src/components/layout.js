@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Hero } from "./hero"
 import { Footer } from "./footer"
 import { ResetGlobalStyle } from "../styles"
@@ -13,11 +13,11 @@ export const Layout = ({ children }) => {
 
   return (
     <>
+      <ResetGlobalStyle />
       {displayLoading ? (
         <Start parentCallback={callbackFunction} />
       ) : (
         <>
-          <ResetGlobalStyle />
           <Hero />
           {children}
           <Footer />
