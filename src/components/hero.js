@@ -63,7 +63,7 @@ justify-content: space-between;
 
 export const Hero = () => {
   return (
-    <HeroContainers>
+    <HeroContainers id="top">
       <Nav>
         <div>
           <Link href="#whoAmI"> Qui suis-je ?</Link>

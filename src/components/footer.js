@@ -4,6 +4,8 @@ import snakeImage from "../images/snake.png";
 import bottomArrow from "../images/buttom-arrow.png";
 import { responsiveHelpers as rh } from "../styles/utils";
 
+import pdf from "../images/CV.pdf";
+
 const FooterContainers = Styled.div`
 background-color:black;
 color:white;
@@ -34,6 +36,8 @@ align-items: center;
   padding: 10px 30px;
   font-size: 18px;
 font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+color:white;
 cursor:pointer;
 &:hover{
     background-color:white;
@@ -75,6 +79,8 @@ align-items:center;
 
 `}
 `;
+const ArrowLink = Styled.a`
+cursor:pointer;`;
 
 const BottomArrow = Styled.img`
 margin:30px 50px;`;
@@ -85,20 +91,20 @@ export const Footer = () => (
       <TitleFooter>Les contacts</TitleFooter>
       <Allitems>
         <FooterTexts>
-          <p>Mon numéro de télephone : 06 95 85 33 43</p>
-          <br />
           <p>Mon adresse email : tania.abitbol@hetic.net</p>
           <br />
           <p>Mon Linkdin : Tania Abitbol</p>
           <br />
           <Cv>
             <p>Mon CV : </p>
-            <a>Découvrir</a>
+            <a href={pdf}>Découvrir</a>
           </Cv>
         </FooterTexts>
         <FooterImages>
           <img src={snakeImage} alt="" />
-          <BottomArrow src={bottomArrow} />
+          <ArrowLink href="#top">
+            <BottomArrow src={bottomArrow} />
+          </ArrowLink>
         </FooterImages>
       </Allitems>
     </FooterWrap>
