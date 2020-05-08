@@ -57,13 +57,12 @@ flex-direction : column;
   }
 `
 
-const FooterWrap = Styled.div`
-display: flex;
-flex-direction : column;
+// const FooterWrap = Styled.div`
+// display: flex;
+// flex-direction : column;
 
-`
-  }
-`
+// `
+
 const FooterText = Styled.div`
 padding-right:460px;
 font-family: 'Montserrat', sans-serif;
@@ -98,9 +97,9 @@ export const Footer = () => (
             <p>Mon curcuillium vitae :</p>
             <button>DÉCOUVRIR</button>
           </Cv>
-        </FooterTexts>
+        </FooterText>
         <FooterImages>
-        <img src={snakeImage} />
+        <img src={snakeImage} alt="" />
         <BottomArrow src={bottomArrow}/>
         </FooterImages>
         

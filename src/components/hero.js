@@ -16,7 +16,7 @@ ${rh.belowPortraitTablet`
   display:none;
 `} 
   height:100%;
-align-items:center;
+  align-items:center;
   width:220px;
   border-right:4px solid white;
   display:flex;
@@ -63,18 +63,19 @@ justify-content: space-between;
   align-self:flex-end;
 }
 `
-const BurgerMenu = Styled.div`
-display:none;
-${rh.belowPortraitTablet`
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+// const BurgerMenu = Styled.div`
+// display:none;
+// ${rh.belowPortraitTablet`
+//   display:flex;
+//   flex-direction:column;
+//   justify-content:space-between;
   
-`
-  }
-`
-export const Hero = () => (
-  <HeroContainers>
+// `
+//   }
+// `
+export const Hero = () => {
+  console.log("test");
+  return (  <HeroContainers>
     <Nav>
       <div>
         <Link> Qui suis-je ?</Link>
@@ -91,11 +92,13 @@ export const Hero = () => (
     </Nav>
     <HeroRightSide>
       <div>
-        <img src={nameImage} />
+        <img src={nameImage} alt=""/>
       </div>
       <div>
-        <img src={heroImage} />
+        <img src={heroImage} alt=""/>
       </div>
     </HeroRightSide>
-  </HeroContainers>
-)
+  </HeroContainers>)
+}
+ 
+

@@ -1,13 +1,13 @@
 import React from "react"
 import Styled, { css } from "styled-components"
 import { ifProp } from "styled-tools"
+import { responsiveHelpers as rh } from "../../../styles/utils"
 
 const Line = Styled.div`
   min-width:220px;
 ${rh.belowPortraitTablet`
   display:none;
-`
-  }
+`}
 border-right: ${props =>
   props.blackBoard ? "4px solid white" : "4px solid black"} ;
   
@@ -26,21 +26,20 @@ ${ifProp(
 )}
 `
 
-const Button = Styled.a`
-  border: 2px solid black;
-  border-radius: 40px;
-  padding: 10px 50px;
-  margin-top:15px;
-  width: min-content;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  cursor:pointer; 
-  &:hover{
-    background-color:black;
-    color:white;
-  }
-`
-
+// const Button = Styled.a`
+//   border: 2px solid black;
+//   border-radius: 40px;
+//   padding: 10px 50px;
+//   margin-top:15px;
+//   width: min-content;
+//   font-size: 18px;
+//   font-family: 'Montserrat', sans-serif;
+//   cursor:pointer;
+//   &:hover{
+//     background-color:black;
+//     color:white;
+//   }
+// `
 
 const ArticleContainer = Styled.div`
 display:flex;
@@ -61,7 +60,6 @@ ${rh.belowPortraitTablet`
 `} 
 `
 
-`
 const ArticleText = Styled.div`
 flex:1;
 white-space: break-spaces;
@@ -70,7 +68,7 @@ line-height:27px;
 display: flex;
 flex-direction: column;
 padding-left:100px ;
-padding-right:${props => (props.order ? 0 : '100px')};
+padding-right:${props => (props.order ? 0 : "100px")};
 ${rh.belowPortraitTablet`
 padding: 0 30px;
 `} 
@@ -115,7 +113,7 @@ export const Article = ({
       <ArticleTitle>{title}</ArticleTitle>
       <ArticleContainer>
         <ArticleImage order={order.toString()}>
-          <img src={articleImage} />
+          <img src={articleImage} alt="" />
         </ArticleImage>
         <ArticleText>
           <ArticleLittleTitle>{articleTitle}</ArticleLittleTitle>
