@@ -1,7 +1,7 @@
 import React from "react"
 import Styled, { css } from "styled-components"
 import { ifProp } from "styled-tools"
-import { responsiveHelpers as rh } from "../../../styles/utils"
+import {responsiveHelpers as rh} from "../../../styles/utils"
 
 const Line = Styled.div`
   min-width:220px;
@@ -26,20 +26,20 @@ ${ifProp(
 )}
 `
 
-// const Button = Styled.a`
-//   border: 2px solid black;
-//   border-radius: 40px;
-//   padding: 10px 50px;
-//   margin-top:15px;
-//   width: min-content;
-//   font-size: 18px;
-//   font-family: 'Montserrat', sans-serif;
-//   cursor:pointer;
-//   &:hover{
-//     background-color:black;
-//     color:white;
-//   }
-// `
+const Button = Styled.a`
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 10px 50px;
+  margin-top:15px;
+  width: min-content;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  cursor:pointer;
+  &:hover{
+    background-color:black;
+    color:white;
+  }
+`
 
 const ArticleContainer = Styled.div`
 display:flex;
@@ -51,13 +51,14 @@ flex-direction:column;
 
 `
 const ArticleTitle = Styled.h1`
-font-size: 30px;
+font-size: 32px;
 text-align:center;
 font-family: 'Poiret One';
 margin-bottom: 30px;
 ${rh.belowPortraitTablet`
   font-size: 22px;
 `} 
+
 `
 
 const ArticleText = Styled.div`
@@ -75,7 +76,7 @@ padding: 0 30px;
 `
 
 const ArticleImage = Styled.div`
-order:${props => (props.order ? 0 : 1)};
+order:${props => (props.order === "true" ? 0 : 1)};
 display:flex;
 &> img{
   width:100%;
@@ -83,7 +84,7 @@ display:flex;
 }
 `
 const ArticleAll = Styled.div`
-margin:20px 0;
+margin-top:36px;
 justify-content: space-between;
 
 
@@ -91,7 +92,7 @@ justify-content: space-between;
 
 const ArticleLittleTitle = Styled.h2`
 font-family: 'Montserrat', sans-serif;
-font-size:20px;
+font-size:22px;
 padding-bottom:10px;
 font-weight: bold;
 `
@@ -106,6 +107,7 @@ export const Article = ({
   articleTitle,
   blackBoard,
   order,
+  button,
 }) => (
   <ArticlesWrapper blackBoard={blackBoard}>
     <Line blackBoard={blackBoard} />
@@ -118,7 +120,9 @@ export const Article = ({
         <ArticleText>
           <ArticleLittleTitle>{articleTitle}</ArticleLittleTitle>
           <ArticleTextText>{articleText}</ArticleTextText>
+       {button && <Button button={button}>Découvrir</Button> } 
         </ArticleText>
+
       </ArticleContainer>
     </ArticleAll>
   </ArticlesWrapper>

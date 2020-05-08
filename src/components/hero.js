@@ -30,13 +30,14 @@ ${rh.belowPortraitTablet`
     &:last-child{
       margin-bottom:70px;
     }
+   
   }
 
   `
 export const Link = Styled.a`
 color:white;
 font-family: 'Montserrat', sans-serif;
-font-size:14px;
+font-size:18px;
 
 `
 const HeroRightSide = Styled.div`
