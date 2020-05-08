@@ -1,21 +1,21 @@
-import React from "react"
-import Styled from "styled-components"
-import snakeImage from "../images/snake.png"
-import bottomArrow from "../images/buttom-arrow.png"
-import {responsiveHelpers as rh} from "../styles/utils"
+import React from "react";
+import Styled from "styled-components";
+import snakeImage from "../images/snake.png";
+import bottomArrow from "../images/buttom-arrow.png";
+import { responsiveHelpers as rh } from "../styles/utils";
 
 const FooterContainers = Styled.div`
 background-color:black;
 color:white;
 display:flex;
 font-size :18px;
-`
+`;
 
 const TitleFooter = Styled.h1`
 font-size:36px;
 font-family:'Poiret One';
 margin-top:36px;
-`
+`;
 
 const Line = Styled.div`
 min-width:220px;
@@ -23,7 +23,7 @@ border-right:4px solid white;
 ${rh.belowPortraitTablet`
   display:none;
 `}
-`
+`;
 const Cv = Styled.div`
 display:flex;
 align-items: center;
@@ -40,7 +40,7 @@ cursor:pointer;
     color:black;
   }
 }
-`
+`;
 
 const Allitems = Styled.div`
 display:flex;
@@ -49,9 +49,8 @@ width: 100%;
 justify-content: space-between;
 ${rh.belowPortraitTablet`
 flex-direction : column;
-`
-  }
-`
+`}
+`;
 
 const FooterWrap = Styled.div`
 display: flex;
@@ -60,26 +59,25 @@ justify-contents: space-between;
 align-items:center;
 width
 :100%;
-`
+`;
 const FooterTexts = Styled.div`
 padding:40px;
 & p{
   font-size: 22px;
 font-family: 'Montserrat', sans-serif;
 
-} `
+} `;
 const FooterImages = Styled.div`
   ${rh.belowPortraitTablet`
 display:flex;
 flex-direction:column;
 align-items:center;
 
-`
-  }
-`
+`}
+`;
 
 const BottomArrow = Styled.img`
-margin:30px 50px;`
+margin:30px 50px;`;
 export const Footer = () => (
   <FooterContainers>
     <Line />
@@ -99,11 +97,10 @@ export const Footer = () => (
           </Cv>
         </FooterTexts>
         <FooterImages>
-        <img src={snakeImage} />
-        <BottomArrow src={bottomArrow}/>
+          <img src={snakeImage} alt="" />
+          <BottomArrow src={bottomArrow} />
         </FooterImages>
-        
       </Allitems>
     </FooterWrap>
   </FooterContainers>
-)
+);

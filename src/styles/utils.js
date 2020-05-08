@@ -1,4 +1,5 @@
-import { css } from "styled-components"
+import { css } from "styled-components";
+
 const device = {
   mobile: 480,
   portraitTablet: 768,
