@@ -9,9 +9,8 @@ ${rh.belowPortraitTablet`
   display:none;
 `}
 border-right: ${props => (props.blackBoard ? "4px solid white" : "4px solid black")} ;
-  
-
 `;
+
 const ArticlesWrapper = Styled.div`
 display:flex;
 height:100%;
