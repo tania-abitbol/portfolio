@@ -3,9 +3,15 @@ import Styled, { css } from "styled-components"
 import { ifProp } from "styled-tools"
 
 const Line = Styled.div`
+  min-width:220px;
+${rh.belowPortraitTablet`
+  display:none;
+`
+  }
 border-right: ${props =>
-  props.blackBoard ? "2px solid white" : "2px solid black"} ;
-min-width:125px;
+  props.blackBoard ? "4px solid white" : "4px solid black"} ;
+  
+
 `
 const ArticlesWrapper = Styled.div`
 display:flex;
@@ -20,30 +26,69 @@ ${ifProp(
 )}
 `
 
+const Button = Styled.a`
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 10px 50px;
+  margin-top:15px;
+  width: min-content;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  cursor:pointer; 
+  &:hover{
+    background-color:black;
+    color:white;
+  }
+`
+
+
 const ArticleContainer = Styled.div`
 display:flex;
 align-items:center;
 width:100%;
+${rh.belowPortraitTablet`
+flex-direction:column;
+`} 
+
 `
 const ArticleTitle = Styled.h1`
 font-size: 30px;
 text-align:center;
 font-family: 'Poiret One';
+margin-bottom: 30px;
+${rh.belowPortraitTablet`
+  font-size: 22px;
+`} 
+`
 
 `
 const ArticleText = Styled.div`
 flex:1;
 white-space: break-spaces;
-padding:100px;
+font-size:18px;
+line-height:27px;
+display: flex;
+flex-direction: column;
+padding-left:100px ;
+padding-right:${props => (props.order ? 0 : '100px')};
+${rh.belowPortraitTablet`
+padding: 0 30px;
+`} 
 `
 
 const ArticleImage = Styled.div`
-order:${props => (props.order === "true" ? 0 : 1)};
-
+order:${props => (props.order ? 0 : 1)};
+display:flex;
+&> img{
+  width:100%;
+ 
+}
 `
 const ArticleAll = Styled.div`
 margin:20px 0;
 justify-content: space-between;
+
+
 `
 
 const ArticleLittleTitle = Styled.h2`

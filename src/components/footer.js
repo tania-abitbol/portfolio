@@ -1,6 +1,8 @@
 import React from "react"
 import Styled from "styled-components"
 import snakeImage from "../images/snake.png"
+import bottomArrow from "../images/buttom-arrow.png"
+import {responsiveHelpers as rh} from "../styles/utils"
 
 const FooterContainers = Styled.div`
 background-color:black;
@@ -17,22 +19,60 @@ padding-top:20px;
 `
 
 const Line = Styled.div`
-min-width:125px;
-border-right:2px solid white;
+min-width:220px;
+border-right:4px solid white;
+${rh.belowPortraitTablet`
+  display:none;
+`
+  }
 `
 const Cv = Styled.div`
-display:flex;`
+display:flex;
+align-items: center;
+&>a{
+  border: solid white 2px;
+  border-radius: 40px;
+  margin:10px;
+  padding: 10px 30px;
+  font-size: 18px;
+font-family: 'Montserrat', sans-serif;
+cursor:pointer;
+&:hover{
+    background-color:white;
+    color:black;
+  }
+}
+`
 
 const Allitems = Styled.div`
 display:flex;
 margin:40px;
 align-items:center;
+width: 100%;
+justify-content: space-between;
+${rh.belowPortraitTablet`
+flex-direction : column;
+
+`
+  }
 `
 const FooterText = Styled.div`
 padding-right:460px;
 font-family: 'Montserrat', sans-serif;
-     `
 
+} `
+const FooterImages = Styled.div`
+  ${rh.belowPortraitTablet`
+display:flex;
+flex-direction:column;
+align-items:center;
+
+`
+  }
+`
+
+const BottomArrow = Styled.img`
+margin:30px 50px;`
 export const Footer = () => (
   <FooterContainers>
     <Line />
@@ -50,8 +90,12 @@ export const Footer = () => (
             <p>Mon curcuillium vitae :</p>
             <button>DÉCOUVRIR</button>
           </Cv>
-        </FooterText>
+        </FooterTexts>
+        <FooterImages>
         <img src={snakeImage} />
+        <BottomArrow src={bottomArrow}/>
+        </FooterImages>
+        
       </Allitems>
     </div>
   </FooterContainers>
