@@ -35,20 +35,23 @@ const LoadingBar = styled.hr`
   width: ${({ barProgress }) => barProgress}%;
 `
 
-export const Start = props => {
+
+export const Start = ({parentCallback}) => {
   const [counter, setCounter] = useState(0)
 
   const finishLoading = useCallback(() => {
-    props.parentCallback(false)
-  }, [props])
+    parentCallback(false)
+  }, [parentCallback])
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter(counter => counter + 1)
-    }, 50)
-    if (counter === 101) {
+    }, 15)
+
+    if (counter === 100) {
       finishLoading()
     }
+
     return () => clearInterval(interval)
   }, [counter, finishLoading])
 

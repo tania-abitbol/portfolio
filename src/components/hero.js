@@ -15,8 +15,8 @@ export const Nav = Styled.div`
   height:100%;
 align-items:center;
 
-  width:125px;
-  border-right:2px solid white;
+  width:220px;
+  border-right:4px solid white;
   display:flex;
   flex-direction:column;
   justify-content: space-between;
@@ -28,13 +28,14 @@ align-items:center;
     &:last-child{
       margin-bottom:70px;
     }
+   
   }
 
   `
 export const Link = Styled.a`
 color:white;
 font-family: 'Montserrat', sans-serif;
-font-size:14px;
+font-size:18px;
 
 `
 const HeroRightSide = Styled.div`
