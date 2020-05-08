@@ -1,18 +1,17 @@
-import React from "react"
-import Styled, { css } from "styled-components"
-import { ifProp } from "styled-tools"
-import {responsiveHelpers as rh} from "../../../styles/utils"
+import React from "react";
+import Styled, { css } from "styled-components";
+import { ifProp } from "styled-tools";
+import { responsiveHelpers as rh } from "../../../styles/utils";
 
 const Line = Styled.div`
   min-width:220px;
 ${rh.belowPortraitTablet`
   display:none;
 `}
-border-right: ${props =>
-  props.blackBoard ? "4px solid white" : "4px solid black"} ;
+border-right: ${props => (props.blackBoard ? "4px solid white" : "4px solid black")} ;
   
 
-`
+`;
 const ArticlesWrapper = Styled.div`
 display:flex;
 height:100%;
@@ -24,7 +23,7 @@ ${ifProp(
     color: white;
   `
 )}
-`
+`;
 
 const Button = Styled.a`
   border: 2px solid black;
@@ -39,7 +38,7 @@ const Button = Styled.a`
     background-color:black;
     color:white;
   }
-`
+`;
 
 const ArticleContainer = Styled.div`
 display:flex;
@@ -49,7 +48,7 @@ ${rh.belowPortraitTablet`
 flex-direction:column;
 `} 
 
-`
+`;
 const ArticleTitle = Styled.h1`
 font-size: 32px;
 text-align:center;
@@ -59,7 +58,7 @@ ${rh.belowPortraitTablet`
   font-size: 22px;
 `} 
 
-`
+`;
 
 const ArticleText = Styled.div`
 flex:1;
@@ -73,7 +72,7 @@ padding-right:${props => (props.order ? 0 : "100px")};
 ${rh.belowPortraitTablet`
 padding: 0 30px;
 `} 
-`
+`;
 
 const ArticleImage = Styled.div`
 order:${props => (props.order === "true" ? 0 : 1)};
@@ -82,24 +81,24 @@ display:flex;
   width:100%;
  
 }
-`
+`;
 const ArticleAll = Styled.div`
 margin-top:36px;
 justify-content: space-between;
 
 
-`
+`;
 
 const ArticleLittleTitle = Styled.h2`
 font-family: 'Montserrat', sans-serif;
 font-size:22px;
 padding-bottom:10px;
 font-weight: bold;
-`
+`;
 
 const ArticleTextText = Styled.p`
 font-family: 'Montserrat', sans-serif;
-`
+`;
 export const Article = ({
   title,
   articleText,
@@ -120,10 +119,9 @@ export const Article = ({
         <ArticleText>
           <ArticleLittleTitle>{articleTitle}</ArticleLittleTitle>
           <ArticleTextText>{articleText}</ArticleTextText>
-       {button && <Button button={button}>Découvrir</Button> } 
+          {button && <Button button={button}>Découvrir</Button>}
         </ArticleText>
-
       </ArticleContainer>
     </ArticleAll>
   </ArticlesWrapper>
-)
+);

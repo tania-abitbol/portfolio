@@ -1,11 +1,11 @@
-import React from "react"
-import { Layout } from "../../components/layout"
-import { Article } from "./local-components/article"
-import { articleData } from "./data"
-import { HelmetComponent } from "../../components/helmet"
+import React from "react";
+import { Layout } from "../../components/layout";
+import { Article } from "./local-components/article";
+import { articleData } from "./data";
+import { HelmetComponent } from "../../components/helmet";
 
 export const IndexPage = () => (
-  <Layout >
+  <Layout>
     <HelmetComponent title="Portfolio Tania Abitbol" />
     {articleData.map((value, index) => (
       <Article
@@ -20,4 +20,4 @@ export const IndexPage = () => (
       />
     ))}
   </Layout>
-)
+);

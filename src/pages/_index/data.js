@@ -1,11 +1,11 @@
-import eyesImage from "../../images/eyes.png"
-import girlImage from "../../images/littke-girl.png"
-import charactersImage from "../../images/persos.png"
-import catImage from "../../images/renard.png"
-import aquariumImage from "../../images/aquarium.png"
-import flowerImage from "../../images/fleur.png"
-import bearImage from "../../images/ours.png"
-import phoneImage from "../../images/phone.png"
+import eyesImage from "../../images/eyes.png";
+import girlImage from "../../images/littke-girl.png";
+import charactersImage from "../../images/persos.png";
+import catImage from "../../images/renard.png";
+import aquariumImage from "../../images/aquarium.png";
+import flowerImage from "../../images/fleur.png";
+import bearImage from "../../images/ours.png";
+import phoneImage from "../../images/phone.png";
 
 export const articleData = [
   {
@@ -16,9 +16,6 @@ export const articleData = [
     articleImage: eyesImage,
     blackBoard: false,
     button: false,
-
-    
-
   },
   {
     title: "Et qui suis-je ?",
@@ -28,8 +25,6 @@ export const articleData = [
     articleImage: girlImage,
     blackBoard: false,
     button: false,
-
-
   },
   {
     title: "La creativité . . .",
@@ -39,8 +34,6 @@ export const articleData = [
     articleImage: charactersImage,
     blackBoard: false,
     button: false,
-
-
   },
   {
     title: "Quelles sont mes compétences ? ",
@@ -59,7 +52,6 @@ export const articleData = [
     articleImage: catImage,
     blackBoard: true,
     button: false,
-
   },
   {
     title: "Des projets réalisés ? ",
@@ -86,4 +78,4 @@ export const articleData = [
     blackBoard: false,
     button: true,
   },
-]
+];
