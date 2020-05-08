@@ -23,9 +23,14 @@
     "styled-tools": "^1.7.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1", 
+    "eslint": "^6.8.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.2"
+    "lint-staged": "^10.1.2",
+    "prettier": "^1.19.1"
   },
   "keywords": [
     "gatsby"
@@ -47,14 +52,12 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
- 
   "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-        
-      }
-    },
-  "lint-staged": {
-      "*.{js,json,html,scss}": "yarn prettier"
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,json,html,scss}": "yarn prettier"
+  }
 }
