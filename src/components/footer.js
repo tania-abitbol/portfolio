@@ -56,6 +56,14 @@ flex-direction : column;
 `
   }
 `
+
+const FooterWrap = Styled.div`
+display: flex;
+flex-direction : column;
+
+`
+  }
+`
 const FooterText = Styled.div`
 padding-right:460px;
 font-family: 'Montserrat', sans-serif;
