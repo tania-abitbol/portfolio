@@ -1,6 +1,7 @@
 import React from "react"
 import Styled, { css } from "styled-components"
 import { ifProp } from "styled-tools"
+import {responsiveHelpers as rh} from "../../../styles/utils"
 
 const Line = Styled.div`
   min-width:220px;
@@ -52,16 +53,16 @@ flex-direction:column;
 
 `
 const ArticleTitle = Styled.h1`
-font-size: 30px;
+font-size: 32px;
 text-align:center;
 font-family: 'Poiret One';
 margin-bottom: 30px;
 ${rh.belowPortraitTablet`
   font-size: 22px;
 `} 
-`
 
 `
+
 const ArticleText = Styled.div`
 flex:1;
 white-space: break-spaces;
@@ -85,7 +86,7 @@ display:flex;
 }
 `
 const ArticleAll = Styled.div`
-margin:20px 0;
+margin-top:36px;
 justify-content: space-between;
 
 
@@ -93,7 +94,7 @@ justify-content: space-between;
 
 const ArticleLittleTitle = Styled.h2`
 font-family: 'Montserrat', sans-serif;
-font-size:20px;
+font-size:22px;
 padding-bottom:10px;
 font-weight: bold;
 `
@@ -108,19 +109,22 @@ export const Article = ({
   articleTitle,
   blackBoard,
   order,
+  button,
 }) => (
   <ArticlesWrapper blackBoard={blackBoard}>
     <Line blackBoard={blackBoard} />
     <ArticleAll>
       <ArticleTitle>{title}</ArticleTitle>
       <ArticleContainer>
-        <ArticleImage order={order.toString()}>
+        <ArticleImage order={order} >
           <img src={articleImage} />
         </ArticleImage>
         <ArticleText>
           <ArticleLittleTitle>{articleTitle}</ArticleLittleTitle>
           <ArticleTextText>{articleText}</ArticleTextText>
+       {button && <Button button={button}>Découvrir</Button> } 
         </ArticleText>
+
       </ArticleContainer>
     </ArticleAll>
   </ArticlesWrapper>

@@ -12,10 +12,9 @@ font-size :18px;
 `
 
 const TitleFooter = Styled.h1`
-font-size:30px;
+font-size:36px;
 font-family:'Poiret One';
-text-align :center;
-padding-top:20px;
+margin-top:36px;
 `
 
 const Line = Styled.div`
@@ -23,8 +22,7 @@ min-width:220px;
 border-right:4px solid white;
 ${rh.belowPortraitTablet`
   display:none;
-`
-  }
+`}
 `
 const Cv = Styled.div`
 display:flex;
@@ -46,13 +44,11 @@ cursor:pointer;
 
 const Allitems = Styled.div`
 display:flex;
-margin:40px;
 align-items:center;
 width: 100%;
 justify-content: space-between;
 ${rh.belowPortraitTablet`
 flex-direction : column;
-
 `
   }
 `
@@ -60,12 +56,15 @@ flex-direction : column;
 const FooterWrap = Styled.div`
 display: flex;
 flex-direction : column;
-
+justify-contents: space-between;
+align-items:center;
+width
+:100%;
 `
-  }
-`
-const FooterText = Styled.div`
-padding-right:460px;
+const FooterTexts = Styled.div`
+padding:40px;
+& p{
+  font-size: 22px;
 font-family: 'Montserrat', sans-serif;
 
 } `
@@ -84,10 +83,10 @@ margin:30px 50px;`
 export const Footer = () => (
   <FooterContainers>
     <Line />
-    <div>
+    <FooterWrap>
       <TitleFooter>Les contacts</TitleFooter>
       <Allitems>
-        <FooterText>
+        <FooterTexts>
           <p>Mon numéro de télephone : 06 95 85 33 43</p>
           <br />
           <p>Mon adresse email : tania.abitbol@hetic.net</p>
@@ -95,8 +94,8 @@ export const Footer = () => (
           <p>Mon Linkdin : Tania Abitbol</p>
           <br />
           <Cv>
-            <p>Mon curcuillium vitae :</p>
-            <button>DÉCOUVRIR</button>
+            <p>Mon CV : </p>
+            <a>Découvrir</a>
           </Cv>
         </FooterTexts>
         <FooterImages>
@@ -105,6 +104,6 @@ export const Footer = () => (
         </FooterImages>
         
       </Allitems>
-    </div>
+    </FooterWrap>
   </FooterContainers>
 )
