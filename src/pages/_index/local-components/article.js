@@ -5,7 +5,7 @@ import { responsiveHelpers as rh } from "../../../styles/utils";
 
 const Line = Styled.div`
   min-width:220px;
-${rh.belowPortraitTablet`
+${rh.belowLandscapeTablet`
   display:none;
 `}
 border-right: ${props => (props.blackBoard ? "4px solid white" : "4px solid black")} ;
@@ -43,7 +43,7 @@ const ArticleContainer = Styled.div`
 display:flex;
 align-items:center;
 width:100%;
-${rh.belowPortraitTablet`
+${rh.belowLandscapeTablet`
 flex-direction:column;
 `} 
 
@@ -53,7 +53,7 @@ font-size: 32px;
 text-align:center;
 font-family: 'Poiret One';
 margin-bottom: 30px;
-${rh.belowPortraitTablet`
+${rh.belowLandscapeTablet`
   font-size: 22px;
 `} 
 
@@ -68,7 +68,7 @@ display: flex;
 flex-direction: column;
 padding-left:100px ;
 padding-right:${props => (props.order ? 0 : "100px")};
-${rh.belowPortraitTablet`
+${rh.belowLandscapeTablet`
 padding: 0 30px;
 `} 
 `;

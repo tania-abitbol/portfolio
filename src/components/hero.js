@@ -11,7 +11,7 @@ const HeroContainers = Styled.div`
  justify-content: space-between;
   `;
 export const Nav = Styled.div`
-${rh.belowPortraitTablet`
+${rh.belowLandscapeTablet`
   display:none;
 `} 
   height:100%;
@@ -30,7 +30,6 @@ ${rh.belowPortraitTablet`
       margin-bottom:70px;
     }
   }
-
   `;
 export const Link = Styled.a`
 color:white;
@@ -47,14 +46,14 @@ justify-content: space-between;
 &>div:first-child{
   margin-left:20px;
   &>img{
-    ${rh.belowPortraitTablet`
+    ${rh.belowLandscapeTablet`
   width: 200px;
 `}
  } 
 }
 &>div:last-child{
  &> img{
-  ${rh.belowPortraitTablet`
+  ${rh.belowLandscapeTablet`
   width: 100%;
 `}
   }

@@ -20,7 +20,7 @@ margin-top:36px;
 const Line = Styled.div`
 min-width:220px;
 border-right:4px solid white;
-${rh.belowPortraitTablet`
+${rh.belowLandscapeTablet`
   display:none;
 `}
 `;
@@ -47,7 +47,7 @@ display:flex;
 align-items:center;
 width: 100%;
 justify-content: space-between;
-${rh.belowPortraitTablet`
+${rh.belowLandscapeTablet`
 flex-direction : column;
 `}
 `;
@@ -68,7 +68,7 @@ font-family: 'Montserrat', sans-serif;
 
 } `;
 const FooterImages = Styled.div`
-  ${rh.belowPortraitTablet`
+  ${rh.belowLandscapeTablet`
 display:flex;
 flex-direction:column;
 align-items:center;
