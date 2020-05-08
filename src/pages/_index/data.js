@@ -9,6 +9,7 @@ import phoneImage from "../../images/phone.png";
 
 export const articleData = [
   {
+    id: "",
     title: "Portfolio d’une etudiante en web",
     articleTitle: "Ma recherche",
     articleText:
@@ -18,6 +19,7 @@ export const articleData = [
     button: false,
   },
   {
+    id: "whoAmI",
     title: "Et qui suis-je ?",
     articleTitle: "Ma présentation",
     articleText:
@@ -27,6 +29,7 @@ export const articleData = [
     button: false,
   },
   {
+    id: "",
     title: "La creativité . . .",
     articleTitle: "Ma mentalité",
     articleText:
@@ -36,6 +39,7 @@ export const articleData = [
     button: false,
   },
   {
+    id: "mySkills",
     title: "Quelles sont mes compétences ? ",
     articleTitle: "Dans le domaine du code :",
     articleText:
@@ -45,6 +49,7 @@ export const articleData = [
     button: false,
   },
   {
+    id: "",
     title: " ",
     articleTitle: "Dans le domaine du design :",
     articleText:
@@ -54,6 +59,7 @@ export const articleData = [
     button: false,
   },
   {
+    id: "myProjets",
     title: "Des projets réalisés ? ",
     articleTitle: "Info quiz",
     articleText:
@@ -63,6 +69,7 @@ export const articleData = [
     button: true,
   },
   {
+    id: "",
     articleTitle: "Mon jeu vidéo codé en JavaScript",
     articleText:
       "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
@@ -71,6 +78,7 @@ export const articleData = [
     button: true,
   },
   {
+    id: "",
     articleTitle: "Socoda",
     articleText:
       "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",

@@ -29,7 +29,6 @@ ${rh.belowPortraitTablet`
     &:last-child{
       margin-bottom:70px;
     }
-   
   }
 
   `;
@@ -37,7 +36,8 @@ export const Link = Styled.a`
 color:white;
 font-family: 'Montserrat', sans-serif;
 font-size:18px;
-
+cursor:pointer;
+text-decoration:none;
 `;
 const HeroRightSide = Styled.div`
 display:flex;
@@ -61,32 +61,22 @@ justify-content: space-between;
   align-self:flex-end;
 }
 `;
-// const BurgerMenu = Styled.div`
-// display:none;
-// ${rh.belowPortraitTablet`
-//   display:flex;
-//   flex-direction:column;
-//   justify-content:space-between;
 
-// `
-//   }
-// `
 export const Hero = () => {
-  console.log("test");
   return (
     <HeroContainers>
       <Nav>
         <div>
-          <Link> Qui suis-je ?</Link>
+          <Link href="#whoAmI"> Qui suis-je ?</Link>
         </div>
         <div>
-          <Link> Mes compétences</Link>
+          <Link href="#mySkills"> Mes compétences</Link>
         </div>
         <div>
-          <Link>Mes projets</Link>
+          <Link href="#myProjets">Mes projets</Link>
         </div>
         <div>
-          <Link>Me contacter</Link>
+          <Link href="#myContacts">Me contacter</Link>
         </div>
       </Nav>
       <HeroRightSide>

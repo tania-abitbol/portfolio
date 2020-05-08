@@ -10,6 +10,7 @@ export const IndexPage = () => (
     {articleData.map((value, index) => (
       <Article
         key={index}
+        id={value.id}
         title={value.title}
         articleTitle={value.articleTitle}
         articleText={value.articleText}

@@ -78,14 +78,11 @@ order:${props => (props.order === "true" ? 0 : 1)};
 display:flex;
 &> img{
   width:100%;
- 
 }
 `;
 const ArticleAll = Styled.div`
 margin-top:36px;
 justify-content: space-between;
-
-
 `;
 
 const ArticleLittleTitle = Styled.h2`
@@ -106,8 +103,9 @@ export const Article = ({
   blackBoard,
   order,
   button,
+  id,
 }) => (
-  <ArticlesWrapper blackBoard={blackBoard}>
+  <ArticlesWrapper id={id} blackBoard={blackBoard}>
     <Line blackBoard={blackBoard} />
     <ArticleAll>
       <ArticleTitle>{title}</ArticleTitle>

@@ -79,7 +79,7 @@ align-items:center;
 const BottomArrow = Styled.img`
 margin:30px 50px;`;
 export const Footer = () => (
-  <FooterContainers>
+  <FooterContainers id="myContacts">
     <Line />
     <FooterWrap>
       <TitleFooter>Les contacts</TitleFooter>
