@@ -1,6 +1,8 @@
 import React from "react"
 import Styled from "styled-components"
 import snakeImage from "../images/snake.png"
+import bottomArrow from "../images/buttom-arrow.png"
+import {responsiveHelpers as rh} from "../styles/utils"
 
 const FooterContainers = Styled.div`
 background-color:black;
@@ -18,6 +20,9 @@ margin-top:36px;
 const Line = Styled.div`
 min-width:220px;
 border-right:4px solid white;
+${rh.belowPortraitTablet`
+  display:none;
+`}
 `
 const Cv = Styled.div`
 display:flex;
@@ -25,8 +30,8 @@ align-items: center;
 &>a{
   border: solid white 2px;
   border-radius: 40px;
-  padding: 15px 40px;
-  margin:15px;
+  margin:10px;
+  padding: 10px 30px;
   font-size: 18px;
 font-family: 'Montserrat', sans-serif;
 cursor:pointer;
@@ -42,6 +47,15 @@ display:flex;
 align-items:center;
 width: 100%;
 justify-content: space-between;
+${rh.belowPortraitTablet`
+flex-direction : column;
+`
+  }
+`
+
+const FooterWrap = Styled.div`
+display: flex;
+flex-direction : column;
 `
 
 const FooterWrap = Styled.div`
@@ -58,7 +72,18 @@ padding:40px;
 font-family: 'Montserrat', sans-serif;
 
 } `
+const FooterImages = Styled.div`
+  ${rh.belowPortraitTablet`
+display:flex;
+flex-direction:column;
+align-items:center;
 
+`
+  }
+`
+
+const BottomArrow = Styled.img`
+margin:30px 50px;`
 export const Footer = () => (
   <FooterContainers>
     <Line />
@@ -77,9 +102,10 @@ export const Footer = () => (
             <a>Découvrir</a>
           </Cv>
         </FooterTexts>
-        <div>
+        <FooterImages>
         <img src={snakeImage} />
-        </div>
+        <BottomArrow src={bottomArrow}/>
+        </FooterImages>
         
       </Allitems>
     </FooterWrap>

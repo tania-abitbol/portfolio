@@ -8,6 +8,8 @@ const LoadingPage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+font-family: 'Montserrat', sans-serif;
+
 `
 
 const Counter = styled.div`
@@ -25,13 +27,14 @@ const LoadingText = styled.p`
 const LoadingTitle = styled.h1`
   color: white;
   font-size: 60px;
-  margin-top: -10px;
+  margin-top: 10px;
 `
 
 const LoadingBar = styled.hr`
   background: #f60d54;
   border: none;
   height: 1px;
+  margin-top: 10px;
   width: ${({ barProgress }) => barProgress}%;
 `
 
@@ -46,7 +49,7 @@ export const Start = ({parentCallback}) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter(counter => counter + 1)
-    }, 15)
+    }, 10)
 
     if (counter === 100) {
       finishLoading()
@@ -58,7 +61,7 @@ export const Start = ({parentCallback}) => {
   return (
     <LoadingPage>
       <Counter>
-        <LoadingText>Loading</LoadingText>
+        <LoadingText>Tania Portfolio</LoadingText>
         <LoadingTitle>{counter}%</LoadingTitle>
         <LoadingBar barProgress={counter} />
       </Counter>

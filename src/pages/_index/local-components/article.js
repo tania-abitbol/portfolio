@@ -5,9 +5,13 @@ import {responsiveHelpers as rh} from "../../../styles/utils"
 
 const Line = Styled.div`
   min-width:220px;
-
+${rh.belowPortraitTablet`
+  display:none;
+`
+  }
 border-right: ${props =>
   props.blackBoard ? "4px solid white" : "4px solid black"} ;
+  
 
 `
 const ArticlesWrapper = Styled.div`
@@ -24,12 +28,12 @@ ${ifProp(
 `
 
 const Button = Styled.a`
-  border: 4px solid black;
+  border: 2px solid black;
   border-radius: 40px;
-  padding: 15px 40px;
+  padding: 10px 50px;
   margin-top:15px;
   width: min-content;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   cursor:pointer; 
   &:hover{
@@ -43,6 +47,9 @@ const ArticleContainer = Styled.div`
 display:flex;
 align-items:center;
 width:100%;
+${rh.belowPortraitTablet`
+flex-direction:column;
+`} 
 
 `
 const ArticleTitle = Styled.h1`
@@ -50,9 +57,10 @@ font-size: 32px;
 text-align:center;
 font-family: 'Poiret One';
 margin-bottom: 30px;
-${rh.belowMobile`
-  font-size: 15px;
+${rh.belowPortraitTablet`
+  font-size: 22px;
 `} 
+
 `
 
 const ArticleText = Styled.div`
@@ -64,15 +72,24 @@ display: flex;
 flex-direction: column;
 padding-left:100px ;
 padding-right:${props => (props.order ? 0 : '100px')};
+${rh.belowPortraitTablet`
+padding: 0 30px;
+`} 
 `
 
 const ArticleImage = Styled.div`
 order:${props => (props.order ? 0 : 1)};
 display:flex;
+&> img{
+  width:100%;
+ 
+}
 `
 const ArticleAll = Styled.div`
 margin-top:36px;
 justify-content: space-between;
+
+
 `
 
 const ArticleLittleTitle = Styled.h2`
