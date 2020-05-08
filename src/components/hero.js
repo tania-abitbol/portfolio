@@ -9,7 +9,6 @@ const HeroContainers = Styled.div`
  height:100vh;
  display:flex;
  justify-content: space-between;
-   
   `
 export const Nav = Styled.div`
 ${rh.belowPortraitTablet`
