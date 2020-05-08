@@ -8,8 +8,7 @@ const LoadingPage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 `
 
 const Counter = styled.div`
@@ -38,8 +37,7 @@ const LoadingBar = styled.hr`
   width: ${({ barProgress }) => barProgress}%;
 `
 
-
-export const Start = ({parentCallback}) => {
+export const Start = ({ parentCallback }) => {
   const [counter, setCounter] = useState(0)
 
   const finishLoading = useCallback(() => {

@@ -2,7 +2,7 @@ import React from "react"
 import Styled from "styled-components"
 import snakeImage from "../images/snake.png"
 import bottomArrow from "../images/buttom-arrow.png"
-import {responsiveHelpers as rh} from "../styles/utils"
+import { responsiveHelpers as rh } from "../styles/utils"
 
 const FooterContainers = Styled.div`
 background-color:black;
@@ -49,8 +49,7 @@ width: 100%;
 justify-content: space-between;
 ${rh.belowPortraitTablet`
 flex-direction : column;
-`
-  }
+`}
 `
 
 const FooterWrap = Styled.div`
@@ -74,8 +73,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 
-`
-  }
+`}
 `
 
 const BottomArrow = Styled.img`
@@ -99,10 +97,9 @@ export const Footer = () => (
           </Cv>
         </FooterTexts>
         <FooterImages>
-        <img src={snakeImage} alt="" />
-        <BottomArrow src={bottomArrow}/>
+          <img src={snakeImage} alt="" />
+          <BottomArrow src={bottomArrow} />
         </FooterImages>
-        
       </Allitems>
     </FooterWrap>
   </FooterContainers>
