@@ -1,15 +1,15 @@
-import React from "react"
-import Styled from "styled-components"
-import heroImage from "../images/hero-image.png"
-import nameImage from "../images/name.png"
-import { responsiveHelpers as rh } from "../styles/utils"
+import React from "react";
+import Styled from "styled-components";
+import heroImage from "../images/hero-image.png";
+import nameImage from "../images/name.png";
+import { responsiveHelpers as rh } from "../styles/utils";
 
 const HeroContainers = Styled.div`
  background: black; 
  height:100vh;
  display:flex;
  justify-content: space-between;
-  `
+  `;
 export const Nav = Styled.div`
 ${rh.belowPortraitTablet`
   display:none;
@@ -32,13 +32,13 @@ ${rh.belowPortraitTablet`
    
   }
 
-  `
+  `;
 export const Link = Styled.a`
 color:white;
 font-family: 'Montserrat', sans-serif;
 font-size:18px;
 
-`
+`;
 const HeroRightSide = Styled.div`
 display:flex;
 flex-direction:column;
@@ -60,7 +60,7 @@ justify-content: space-between;
   }
   align-self:flex-end;
 }
-`
+`;
 // const BurgerMenu = Styled.div`
 // display:none;
 // ${rh.belowPortraitTablet`
@@ -72,7 +72,7 @@ justify-content: space-between;
 //   }
 // `
 export const Hero = () => {
-  console.log("test")
+  console.log("test");
   return (
     <HeroContainers>
       <Nav>
@@ -98,5 +98,5 @@ export const Hero = () => {
         </div>
       </HeroRightSide>
     </HeroContainers>
-  )
-}
+  );
+};

@@ -47,6 +47,6 @@ table {
 }
 
 
-`
+`;
 
-export default reset
+export default reset;
