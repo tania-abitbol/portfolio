@@ -54,7 +54,7 @@ text-align:center;
 font-family: 'Poiret One';
 margin-bottom: 30px;
 ${rh.belowLandscapeTablet`
-  font-size: 22px;
+  font-size: 26px;
 `} 
 
 `;
@@ -90,10 +90,16 @@ font-family: 'Montserrat', sans-serif;
 font-size:22px;
 padding-bottom:10px;
 font-weight: bold;
+${rh.belowLandscapeTablet`
+  font-size: 20px;
+`} 
 `;
 
 const ArticleTextText = Styled.p`
 font-family: 'Montserrat', sans-serif;
+${rh.belowLandscapeTablet`
+  font-size: 16px;
+`} 
 `;
 export const Article = ({
   title,
