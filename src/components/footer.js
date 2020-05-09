@@ -17,6 +17,9 @@ const TitleFooter = Styled.h1`
 font-size:36px;
 font-family:'Poiret One';
 margin-top:36px;
+${rh.belowLandscapeTablet`
+  font-size: 26px;
+`} 
 `;
 
 const Line = Styled.div`
@@ -68,7 +71,9 @@ padding:40px;
 & p{
   font-size: 22px;
 font-family: 'Montserrat', sans-serif;
-
+${rh.belowLandscapeTablet`
+  font-size: 18px;
+`} 
 } `;
 const FooterImages = Styled.div`
   ${rh.belowLandscapeTablet`
