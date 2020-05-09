@@ -33,6 +33,8 @@ const Button = Styled.a`
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   cursor:pointer;
+  text-decoration:none;
+  color:black;
   &:hover{
     background-color:black;
     color:white;
@@ -54,7 +56,7 @@ text-align:center;
 font-family: 'Poiret One';
 margin-bottom: 30px;
 ${rh.belowLandscapeTablet`
-  font-size: 26px;
+  font-size: 24px;
 `} 
 
 `;
@@ -69,16 +71,25 @@ flex-direction: column;
 padding-left:100px ;
 padding-right:${props => (props.order ? 0 : "100px")};
 ${rh.belowLandscapeTablet`
-padding: 0 30px;
+padding: 20px 30px;
 `} 
 `;
 
 const ArticleImage = Styled.div`
 order:${props => (props.order === "true" ? 0 : 1)};
-display:flex;
 &> img{
   width:100%;
+  ${rh.belowLandscapeTablet`
+  width:70%;
+`} 
 }
+${rh.belowLandscapeTablet`
+  display:flex;
+  justify-content:${props => {
+    console.log(props.flex);
+    return props.flex && props.flex;
+  }};
+`} 
 `;
 const ArticleAll = Styled.div`
 margin-top:36px;
@@ -101,6 +112,7 @@ ${rh.belowLandscapeTablet`
   font-size: 16px;
 `} 
 `;
+
 export const Article = ({
   title,
   articleText,
@@ -110,19 +122,25 @@ export const Article = ({
   order,
   button,
   id,
+  link,
+  flex,
 }) => (
   <ArticlesWrapper id={id} blackBoard={blackBoard}>
     <Line blackBoard={blackBoard} />
     <ArticleAll>
       <ArticleTitle>{title}</ArticleTitle>
       <ArticleContainer>
-        <ArticleImage order={order.toString()}>
+        <ArticleImage order={order.toString()} flex={flex}>
           <img src={articleImage} alt="" />
         </ArticleImage>
         <ArticleText>
           <ArticleLittleTitle>{articleTitle}</ArticleLittleTitle>
           <ArticleTextText>{articleText}</ArticleTextText>
-          {button && <Button button={button}>Découvrir</Button>}
+          {button && (
+            <Button button={button} href={link}>
+              Découvrir
+            </Button>
+          )}
         </ArticleText>
       </ArticleContainer>
     </ArticleAll>

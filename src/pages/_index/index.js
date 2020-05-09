@@ -9,6 +9,7 @@ export const IndexPage = () => (
     <HelmetComponent title="Portfolio Tania Abitbol" />
     {articleData.map((value, index) => (
       <Article
+        link={value.link}
         key={index}
         id={value.id}
         title={value.title}
@@ -18,6 +19,7 @@ export const IndexPage = () => (
         blackBoard={value.blackBoard}
         button={value.button}
         order={index % 2 === 0}
+        flex={value.flex}
       />
     ))}
   </Layout>

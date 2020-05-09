@@ -17,6 +17,7 @@ export const articleData = [
     articleImage: eyesImage,
     blackBoard: false,
     button: false,
+    flex: "center",
   },
   {
     id: "whoAmI",
@@ -27,6 +28,7 @@ export const articleData = [
     articleImage: girlImage,
     blackBoard: false,
     button: false,
+    flex: "center",
   },
   {
     id: "",
@@ -37,6 +39,7 @@ export const articleData = [
     articleImage: charactersImage,
     blackBoard: false,
     button: false,
+    flex: "center",
   },
   {
     id: "mySkills",
@@ -47,6 +50,7 @@ export const articleData = [
     articleImage: aquariumImage,
     blackBoard: true,
     button: false,
+    flex: "end",
   },
   {
     id: "",
@@ -57,16 +61,19 @@ export const articleData = [
     articleImage: catImage,
     blackBoard: true,
     button: false,
+    flex: "start",
   },
   {
     id: "myProjets",
     title: "Des projets réalisés ? ",
     articleTitle: "Info quiz",
     articleText:
-      "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
+      "Infoquiz est une application web crée pour la participation au concours boursecoddity 2020 sur la thématique de la découverte du monde de l’informatique et d’internet aux enfants. Mon application web est une solution pour donner envie à l’enfant grâce à un design agréable et amusant de s’instruire sur le thème de l’informatique et d’internet. La gamification de cette application web permettra aux enfants d’acquérir de nouvelles connaissances en plus d’avoir une certaine prévention des dangers du monde de l’informatique.",
     articleImage: flowerImage,
     blackBoard: false,
     button: true,
+    link: "https://github.com/tania-abitbol/Info-Quiz-Tania",
+    flex: "end",
   },
   {
     id: "",
@@ -76,6 +83,8 @@ export const articleData = [
     articleImage: bearImage,
     blackBoard: false,
     button: true,
+    link: "https://after-dream.netlify.app/",
+    flex: "start",
   },
   {
     id: "",
@@ -85,5 +94,7 @@ export const articleData = [
     articleImage: phoneImage,
     blackBoard: false,
     button: true,
+    flex: "end",
+    link: "https://dribbble.com/",
   },
 ];
