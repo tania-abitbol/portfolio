@@ -61,8 +61,7 @@ display: flex;
 flex-direction : column;
 justify-contents: space-between;
 align-items:center;
-width
-:100%;
+width:100%;
 `;
 const FooterTexts = Styled.div`
 padding:40px;
@@ -76,8 +75,10 @@ const FooterImages = Styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
-
 `}
+&>img{
+  width:100%;
+}
 `;
 const ArrowLink = Styled.a`
 cursor:pointer;`;

@@ -78,7 +78,7 @@ background:black;
 height:100%;
 padding:50px;
 &>div{
-  margin-bottom:50%;
+  margin-bottom:120px;
 }
 `;
 const LinkBurgerMenu = Styled.a`
