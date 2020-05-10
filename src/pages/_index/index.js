@@ -19,7 +19,7 @@ export const articleData = [
     title: "Portfolio d’une etudiante en web",
     articleTitle: "Ma recherche",
     articleText:
-      "Actuellement à la recherche d’une alternance (3 semaines en entreprise pour 1 semaine à l’école) dans l’industrie du web, je suis intéressée par l’idée de travailler dans le domaine de la programmation. \r\n\n L’alternance en question débuterait en octobre 2020 et durerait une à deux années. Il est également possible d’effectuer un mois de stage au préalable en Septembre au sein de l’entreprise avant de le début l’alternance. \r\n\n Avant tout, je suis à la recherche d’une entreprise dans laquelle le travail d’équipe, l’entente et le respect de valeurs humaines sont centraux afin que je puisse m’épanouir tant sur le plain humain que professionnel. ",
+      "Actuellement à la recherche d’une alternance, ou à défaut un stage de 2 mois dans l’industrie du web.\r\n\nQuand ? Si alternance, en aout 2020 pour une durée de 2 ans. Si stage, en aout 2020 pour une durée de 2 mois. Pour l’alternance ce serrait 3 semaines en entreprise pour 1 semaine à l’école.\r\n\nje suis intéressée par l’idée de travailler dans le domaine de la programmation.\r\n\nAvant tout, je suis à la recherche d’une entreprise dans laquelle le travail d’équipe, l’entente et le respect de valeurs humaines sont centraux afin que je puisse m’épanouir tant sur le plain humain que professionnel. ",
     articleImage: eyesImage,
     blackBoard: false,
     button: false,
@@ -41,7 +41,7 @@ export const articleData = [
     title: "La creativité . . .",
     articleTitle: "Ma mentalité",
     articleText:
-      "Au cours de ma formation à HETIC, les cours de gestion d’équipe ainsi que les nombreuses semaines de projet m’ont appris à comprendre ce qu’implique le travail d’équipe.\r\n\n Par ailleurs, le respect d’autrui étant fondamental pour travailler en équipe,  l’école nous a demandé de travailler tant sur nous-même que sur les différences qui nous séparent, les différences pouvant parfois constituer une force. En m’investissant, j’en suis ressortie davantage tournée vers les autres et je remercie HETIC pour cette opportunité.\r\n\nD’un autre côté, les cours de méthode de projet m’ont  permis de comprendre et d’intégrer le lexique tout en apprenant à construire méthodiquement un projet technologique.\r\n\nJ’éprouve un réel plaisir lorsque je présente ce pour quoi je travaille dur face à un public à qui j’essaie de transmettre chaque fois ma passion. ",
+      "Au cours de ma formation à HETIC, les cours de gestion d’équipe ainsi que les nombreuses semaines de projet m’ont appris à comprendre ce qu’implique le travail d’équipe. Et aussi, des projets personnel m'ont aider à découvrir et m'ameliorer dans differents domaines de programmation.\r\n\nPar ailleurs, le respect d’autrui étant fondamental pour travailler en équipe,  l’école nous a demandé de travailler tant sur nous-même que sur les différences qui nous séparent, les différences pouvant parfois constituer une force. En m’investissant, j’en suis ressortie davantage tournée vers les autres et je remercie HETIC pour cette opportunité.\r\n\nD’un autre côté, les cours de méthode de projet m’ont  permis de comprendre et d’intégrer le lexique tout en apprenant à construire méthodiquement un projet technologique.\r\n\nJ’éprouve un réel plaisir lorsque je présente ce pour quoi je travaille dur face à un public à qui j’essaie de transmettre chaque fois ma passion. ",
     articleImage: charactersImage,
     blackBoard: false,
     button: false,
@@ -50,9 +50,9 @@ export const articleData = [
   {
     id: "mySkills",
     title: "Quelles sont mes compétences ? ",
-    articleTitle: "Dans le domaine du code :",
+    articleTitle: "Dans le domaine de la programmation :",
     articleText:
-      "-HTML/CSS, j’ai eu l’occasion de plus des cours, m’occupper de la partie integration dans plusieurs de mes projets de groupe.J’utilise comme pré processeur SASS.-JavaScript , maitrise du Dom anssi que l’optimisation du code de maniere à l’aleger au maximum.\r\n\n -PHP, connaissances des bases et ce langage m’interesse.\r\n\n  -GitHub, bonne maitrise de cet outils que j’ai eu l’occasion d’utiliser beaucoup de fois durant l’année.(bonne maitrise du terminal)-Arduino, durant mon lycée j’ai eu l’occasion d’automatiser une piscine avec une carte Arduino et élaborer la conception d’une application pour que tout cela fonctionne.",
+      "- HTML/CSS/SASS : J’ai eu l’occasion, en plus des cours, de m’occuper de la partie intégration dans plusieurs de mes projets de groupe. Je maitrise le pré processeur SASS, et la convention de nommage des classes avec BEM.\r\n\n- JavaScript natif : Maitrise du DOM, création d’un mini jeu vidéo 100% en JS, création d’animations JS sur mes différents projets.Utilisation de diffrerentes librairies et plugins(husky, eslint, prettier).\r\n\n- React JS : Création de ce portfolio avec ce framework, maitrise de styled components.\r\n\n - PHP : Un langage que j’ai beaucoup utilisé durant cette année, maitrise du design pattern MVC (modele, views, controllers) et donc de la programation orienté objects. Utilisation régulière du logiciel mamp et de la structure phpmyadmin.\r\n\n- GitHub : Maitrise de cet outils que j’ai eu l’occasion d’utiliser de manière reguliere.\r\n\n- Gatsby : Maitrise de cet environnement. Ce portfolio utilise Gatsby.\r\n\n- Arduino : J’ai acquis de petites base car durant mon lycée mon projet au bac était de programmer une carte Arduino en C++.\r\n\n- MySql : maitrise des actions de base.\r\n\n- Aws : breve maitrise de l'environement aws. J'ai eu l'occasion de deployer un projet en ligne grace à aws.\r\n\n",
     articleImage: aquariumImage,
     blackBoard: true,
     button: false,
@@ -63,7 +63,7 @@ export const articleData = [
     title: " ",
     articleTitle: "Dans le domaine du design :",
     articleText:
-      "-Figma, Avant tout projet, c’est sur ce logiciel que je m’occupe de la partie maquettage.Je maitrise des plugins et  le prototypage \r\n\n -Photoshop et Illustrator,Les cours durant toute l’année m’ont permis de maitriser ces logiciels.\r\n\n-Premiere pro, j’ai monter un mini film sur ce logiciel et des videos de maquillage artistique.",
+      "-Figma : maitrise du logiciel grâce a des projets comme ce portfolio par exemple, ou je m’occupe du maquettage. C’est un domaine qui me plait aussi fortement. J’ai eu l’occasion  d’utiliser des plugins. Maitrise de l’option de prototypage sur ce logiciel. \r\n\n- Photoshop et Illustrator : Des cours de qualité durant toute l’année m’ont permis de maitriser ces logiciels.\r\n\n- Premiere pro, j’ai monté de courtes videos de maquillage artistique sur ce logiciel.",
     articleImage: catImage,
     blackBoard: true,
     button: false,
@@ -72,9 +72,9 @@ export const articleData = [
   {
     id: "myProjets",
     title: "Des projets réalisés ? ",
-    articleTitle: "Info quiz",
+    articleTitle: "Info quiz - Concours coddity",
     articleText:
-      "Infoquiz est une application web crée pour la participation au concours boursecoddity 2020 sur la thématique de la découverte du monde de l’informatique et d’internet aux enfants. Mon application web est une solution pour donner envie à l’enfant grâce à un design agréable et amusant de s’instruire sur le thème de l’informatique et d’internet. La gamification de cette application web permettra aux enfants d’acquérir de nouvelles connaissances en plus d’avoir une certaine prévention des dangers du monde de l’informatique.",
+      "Infoquiz est une application web crée pour la participation au concours boursecoddity 2020 sur la thématique de la découverte du monde de l’informatique et d’internet aux enfants.\r\n\nMon application web est une solution pour donner envie à l’enfant grâce à un design agréable et amusant de s’instruire sur le thème de l’informatique et d’internet.\r\n\nLa gamification de cette application web permettra aux enfants d’acquérir de nouvelles connaissances en plus d’avoir une certaine prévention des dangers du monde de l’informatique.",
     articleImage: flowerImage,
     blackBoard: false,
     button: true,
@@ -83,9 +83,10 @@ export const articleData = [
   },
   {
     id: "",
+    title: "",
     articleTitle: "Mon jeu vidéo codé en JavaScript",
     articleText:
-      "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
+      "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Dans un délais de seulement 5 jours.\r\n\nPuis par la suite j’ai decidé de reprendre le projet et de l’améliorer seule. Le design à entièrement étais fait pas moi ainsi qu'une grande partie du code. Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'a beaucoup plut.",
     articleImage: bearImage,
     blackBoard: false,
     button: true,
@@ -96,7 +97,7 @@ export const articleData = [
     id: "",
     articleTitle: "Socoda",
     articleText:
-      "Durant un projet à l’école, avec une équipe, l’objectif était d’inventer un jeu vidéo sur le thème “après” entirement coder en Javascript.Et Dans un délai de seulement 5 jours.Puis par la suite j’ai decider de reprendre le projet et de l’améliorer.Le design a entièrement étais fait pas moi ainsi qu'une grande partie du code.Ce projet m’a apporté de nombreuses connaissances en JavaScript ce qui m'beaucoup plut.",
+      "Dans le contexte d'un projet, avec une équipe, en 5 jours, nous avons du designer une interface web pour des producteurs et fournisseurs alimentaire.\r\n\nCe projet m'a fais progresser sur la gestion d'un projet design, création d'un design systeme et utilisation du molecule design. ",
     articleImage: phoneImage,
     blackBoard: false,
     button: true,

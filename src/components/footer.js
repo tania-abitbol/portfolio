@@ -99,13 +99,15 @@ export const Footer = () => (
       <TitleFooter>Les contacts</TitleFooter>
       <Allitems>
         <FooterTexts>
-          <p>Mon adresse email : taniaabitbol@gmail.com</p>
+          <p>Mon adresse email : taniabitbol@gmail.com</p>
           <br />
           <p>Mon Linkdin : Tania Abitbol</p>
           <br />
           <Cv>
             <p>Mon CV : </p>
-            <a href={pdf}>Découvrir</a>
+            <a href={pdf} target="_blank">
+              Découvrir
+            </a>
           </Cv>
         </FooterTexts>
         <FooterImages>
