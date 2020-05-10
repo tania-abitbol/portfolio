@@ -68,6 +68,7 @@ font-size:18px;
 line-height:27px;
 display: flex;
 flex-direction: column;
+padding-bottom:20px;
 padding-left:100px ;
 padding-right:${props => (props.order ? 0 : "100px")};
 ${rh.belowLandscapeTablet`
@@ -134,7 +135,7 @@ const Article = ({
           <ArticleLittleTitle>{articleTitle}</ArticleLittleTitle>
           <ArticleTextText>{articleText}</ArticleTextText>
           {button && (
-            <Button button={button} href={link}>
+            <Button button={button} href={link} target="_blank">
               Découvrir
             </Button>
           )}

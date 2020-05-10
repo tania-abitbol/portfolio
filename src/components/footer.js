@@ -3,8 +3,8 @@ import Styled from "styled-components";
 import snakeImage from "../images/snake.png";
 import bottomArrow from "../images/buttom-arrow.png";
 import { responsiveHelpers as rh } from "../styles/utils";
-
-import pdf from "../images/CV.pdf";
+import githublogo from "../images/github.svg";
+import pdf from "../images/CV-tania2.pdf";
 
 const FooterContainers = Styled.div`
 background-color:black;
@@ -14,7 +14,7 @@ font-size :18px;
 `;
 
 const TitleFooter = Styled.h1`
-font-size:36px;
+font-size:32px;
 font-family:'Poiret One';
 margin-top:36px;
 ${rh.belowLandscapeTablet`
@@ -69,7 +69,7 @@ width:100%;
 const FooterTexts = Styled.div`
 padding:40px;
 & p{
-  font-size: 22px;
+  font-size: 20px;
 font-family: 'Montserrat', sans-serif;
 ${rh.belowLandscapeTablet`
   font-size: 18px;
@@ -92,6 +92,18 @@ cursor:pointer;`;
 
 const BottomArrow = Styled.img`
 margin:30px 50px;`;
+
+const Github = Styled.div`
+display:flex;
+align-items:center;
+&>a{
+  &>img{
+    margin:10px;
+  width:40px;
+}
+}
+
+`;
 export const Footer = () => (
   <FooterContainers id="myContacts">
     <Line />
@@ -99,14 +111,22 @@ export const Footer = () => (
       <TitleFooter>Les contacts</TitleFooter>
       <Allitems>
         <FooterTexts>
-          <p>Mon adresse email : taniaabitbol@gmail.com</p>
+          <p>Mon adresse mail : taniabitbol@gmail.com</p>
           <br />
-          <p>Mon Linkdin : Tania Abitbol</p>
+          <p>Mon linkedIn : Tania Abitbol</p>
           <br />
           <Cv>
-            <p>Mon CV : </p>
-            <a href={pdf}>Découvrir</a>
+            <p>Mon curriculum vitae : </p>
+            <a href={pdf} target="_blank">
+              Découvrir
+            </a>
           </Cv>
+          <Github>
+            <p>Mon github : </p>
+            <a href="https://github.com/tania-abitbol" target="_blank">
+              <img src={githublogo} alt=""></img>
+            </a>
+          </Github>
         </FooterTexts>
         <FooterImages>
           <img src={snakeImage} alt="" />
