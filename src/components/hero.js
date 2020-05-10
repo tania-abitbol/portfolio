@@ -64,15 +64,15 @@ justify-content: space-between;
 `;
 
 const BurgerMenuIcon = Styled.div`
-position:absolute;
+
 z-index:2;
 color:white;
-margin-left: 80%;
+
 `;
 
 const BurgerMenuLink = Styled.div`
 text-align:center;
-position:absolute;
+position:fixed;
 width:100%;
 background:black;
 height:100%;
@@ -98,8 +98,25 @@ margin:15px;
   height:2px;
   width:25px;
   background-color:white;
+  transition: 0.4s;
+  &:first-child{
+   transform: ${props => props.apparition && "rotate(45deg)"};
+  }
+  &:last-child{
+   transform: ${props => props.apparition && "rotate(-45deg)"};
+   margin-top: ${props => props.apparition && "-5px"};
+   
+  }
+
 }
+
+
 `;
+
+const HeroHeader = Styled.div`
+display:flex;
+justify-content:space-between;`;
+
 export const Hero = () => {
   const [apparition, setApparition] = useState(false);
   return (
@@ -118,34 +135,38 @@ export const Hero = () => {
           <Link href="#myContacts">Me contacter</Link>
         </div>
       </Nav>
-      <BurgerMenuIcon onClick={() => setApparition(!apparition)}>
-        <BurgerMenuIconBar>
-          <div> </div>
-          <div> </div>
-          <div> </div>
-        </BurgerMenuIconBar>
-      </BurgerMenuIcon>
-      {apparition ? (
-        <BurgerMenuLink style={{ color: "white" }}>
-          <div>
-            <LinkBurgerMenu href="#whoAmI"> Qui suis-je ?</LinkBurgerMenu>
-          </div>
-          <div>
-            <LinkBurgerMenu href="#mySkills"> Mes compétences</LinkBurgerMenu>
-          </div>
-          <div>
-            <LinkBurgerMenu href="#myProjets">Mes projets</LinkBurgerMenu>
-          </div>
-          <div>
-            <LinkBurgerMenu href="#myContacts">Me contacter</LinkBurgerMenu>
-          </div>
-        </BurgerMenuLink>
-      ) : null}
 
       <HeroRightSide>
-        <div>
-          <img src={nameImage} alt="" />
-        </div>
+        <HeroHeader>
+          <div>
+            <img src={nameImage} alt="" />
+          </div>
+
+          <BurgerMenuIcon onClick={() => setApparition(!apparition)}>
+            <BurgerMenuIconBar apparition={apparition}>
+              {!apparition && <div> </div>}
+
+              <div> </div>
+              <div> </div>
+            </BurgerMenuIconBar>
+          </BurgerMenuIcon>
+          {apparition ? (
+            <BurgerMenuLink style={{ color: "white" }}>
+              <div>
+                <LinkBurgerMenu href="#whoAmI"> Qui suis-je ?</LinkBurgerMenu>
+              </div>
+              <div>
+                <LinkBurgerMenu href="#mySkills"> Mes compétences</LinkBurgerMenu>
+              </div>
+              <div>
+                <LinkBurgerMenu href="#myProjets">Mes projets</LinkBurgerMenu>
+              </div>
+              <div>
+                <LinkBurgerMenu href="#myContacts">Me contacter</LinkBurgerMenu>
+              </div>
+            </BurgerMenuLink>
+          ) : null}
+        </HeroHeader>
         <div>
           <img src={heroImage} alt="" />
         </div>

@@ -97,7 +97,7 @@ export const Footer = () => (
       <TitleFooter>Les contacts</TitleFooter>
       <Allitems>
         <FooterTexts>
-          <p>Mon adresse email : tania.abitbol@hetic.net</p>
+          <p>Mon adresse email : taniabitbol@gmail.com</p>
           <br />
           <p>Mon Linkdin : Tania Abitbol</p>
           <br />
