@@ -76,7 +76,7 @@ padding: 20px 30px;
 `;
 
 const ArticleImage = Styled.div`
-order:${props => (props.order === "true" ? 0 : 1)};
+order:${props => (props.order ? 0 : 1)};
 &> img{
   width:100%;
   ${rh.belowLandscapeTablet`
@@ -85,10 +85,7 @@ order:${props => (props.order === "true" ? 0 : 1)};
 }
 ${rh.belowLandscapeTablet`
   display:flex;
-  justify-content:${props => {
-    console.log(props.flex);
-    return props.flex && props.flex;
-  }};
+  justify-content:${props => props.flex && props.flex};
 `} 
 `;
 const ArticleAll = Styled.div`
@@ -113,7 +110,7 @@ ${rh.belowLandscapeTablet`
 `} 
 `;
 
-export const Article = ({
+const Article = ({
   title,
   articleText,
   articleImage,
@@ -130,7 +127,7 @@ export const Article = ({
     <ArticleAll>
       <ArticleTitle>{title}</ArticleTitle>
       <ArticleContainer>
-        <ArticleImage order={order.toString()} flex={flex}>
+        <ArticleImage order={order} flex={flex}>
           <img src={articleImage} alt="" />
         </ArticleImage>
         <ArticleText>
@@ -146,3 +143,5 @@ export const Article = ({
     </ArticleAll>
   </ArticlesWrapper>
 );
+
+export default Article;

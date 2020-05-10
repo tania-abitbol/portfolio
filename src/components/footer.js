@@ -54,7 +54,7 @@ display:flex;
 align-items:center;
 width: 100%;
 justify-content: space-between;
-${rh.belowLandscapeTablet`
+${rh.belowMobile`
 flex-direction : column;
 `}
 `;
@@ -76,6 +76,8 @@ ${rh.belowLandscapeTablet`
 `} 
 } `;
 const FooterImages = Styled.div`
+display:flex;
+align-items:end;
   ${rh.belowLandscapeTablet`
 display:flex;
 flex-direction:column;
@@ -97,7 +99,7 @@ export const Footer = () => (
       <TitleFooter>Les contacts</TitleFooter>
       <Allitems>
         <FooterTexts>
-          <p>Mon adresse email : taniabitbol@gmail.com</p>
+          <p>Mon adresse email : taniaabitbol@gmail.com</p>
           <br />
           <p>Mon Linkdin : Tania Abitbol</p>
           <br />

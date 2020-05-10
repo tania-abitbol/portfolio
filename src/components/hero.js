@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Styled from "styled-components";
+import { ifProp } from "styled-tools";
+import Styled, { css } from "styled-components";
 import heroImage from "../images/hero-image.png";
 import nameImage from "../images/name.png";
 import { responsiveHelpers as rh } from "../styles/utils";
@@ -45,29 +46,45 @@ display:flex;
 flex-direction:column;
 flex: 1;
 justify-content: space-between;
-&>div:first-child{
+&>div{
+  &>div:first-child{
   margin-left:20px;
+
   &>img{
     ${rh.belowLandscapeTablet`
   width: 200px;
 `}
  } 
 }
-&>div:last-child{
- &> img{
+}
+
+`;
+
+const HeroGirlImage = Styled.div`
+  display:flex;
+  justify-content:flex-end;
+
+&>img{
   ${rh.belowLandscapeTablet`
   width: 100%;
 `}
-  }
-  align-self:flex-end;
 }
+
 `;
 
 const BurgerMenuIcon = Styled.div`
-
+ ${rh.forLandscapeTabletUp`
+display:none;
+`}
+${ifProp(
+  "apparition",
+  css`
+    position: fixed;
+    right: 0;
+  `
+)}
 z-index:2;
 color:white;
-
 `;
 
 const BurgerMenuLink = Styled.div`
@@ -142,10 +159,9 @@ export const Hero = () => {
             <img src={nameImage} alt="" />
           </div>
 
-          <BurgerMenuIcon onClick={() => setApparition(!apparition)}>
+          <BurgerMenuIcon onClick={() => setApparition(!apparition)} apparition={apparition}>
             <BurgerMenuIconBar apparition={apparition}>
               {!apparition && <div> </div>}
-
               <div> </div>
               <div> </div>
             </BurgerMenuIconBar>
@@ -153,23 +169,31 @@ export const Hero = () => {
           {apparition ? (
             <BurgerMenuLink style={{ color: "white" }}>
               <div>
-                <LinkBurgerMenu href="#whoAmI"> Qui suis-je ?</LinkBurgerMenu>
+                <LinkBurgerMenu onClick={() => setApparition(!apparition)} href="#whoAmI">
+                  Qui suis-je ?
+                </LinkBurgerMenu>
               </div>
               <div>
-                <LinkBurgerMenu href="#mySkills"> Mes compétences</LinkBurgerMenu>
+                <LinkBurgerMenu onClick={() => setApparition(!apparition)} href="#mySkills">
+                  Mes compétences
+                </LinkBurgerMenu>
               </div>
               <div>
-                <LinkBurgerMenu href="#myProjets">Mes projets</LinkBurgerMenu>
+                <LinkBurgerMenu onClick={() => setApparition(!apparition)} href="#myProjets">
+                  Mes projets
+                </LinkBurgerMenu>
               </div>
               <div>
-                <LinkBurgerMenu href="#myContacts">Me contacter</LinkBurgerMenu>
+                <LinkBurgerMenu onClick={() => setApparition(!apparition)} href="#myContacts">
+                  Me contacter
+                </LinkBurgerMenu>
               </div>
             </BurgerMenuLink>
           ) : null}
         </HeroHeader>
-        <div>
+        <HeroGirlImage>
           <img src={heroImage} alt="" />
-        </div>
+        </HeroGirlImage>
       </HeroRightSide>
     </HeroContainers>
   );
