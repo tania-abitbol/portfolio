@@ -3,8 +3,8 @@ import Styled from "styled-components";
 import snakeImage from "../images/snake.png";
 import bottomArrow from "../images/buttom-arrow.png";
 import { responsiveHelpers as rh } from "../styles/utils";
-
-import pdf from "../images/CV.pdf";
+import githublogo from "../images/github.svg";
+import pdf from "../images/CV-tania2.pdf";
 
 const FooterContainers = Styled.div`
 background-color:black;
@@ -92,6 +92,18 @@ cursor:pointer;`;
 
 const BottomArrow = Styled.img`
 margin:30px 50px;`;
+
+const Github = Styled.div`
+display:flex;
+align-items:center;
+&>a{
+  &>img{
+    margin:10px;
+  width:40px;
+}
+}
+
+`;
 export const Footer = () => (
   <FooterContainers id="myContacts">
     <Line />
@@ -101,7 +113,7 @@ export const Footer = () => (
         <FooterTexts>
           <p>Mon adresse mail : taniabitbol@gmail.com</p>
           <br />
-          <p>Mon LinkedIn : Tania Abitbol</p>
+          <p>Mon linkedIn : Tania Abitbol</p>
           <br />
           <Cv>
             <p>Mon curriculum vitae : </p>
@@ -109,6 +121,12 @@ export const Footer = () => (
               Découvrir
             </a>
           </Cv>
+          <Github>
+            <p>Mon github : </p>
+            <a href="https://github.com/tania-abitbol" target="_blank">
+              <img src={githublogo} alt=""></img>
+            </a>
+          </Github>
         </FooterTexts>
         <FooterImages>
           <img src={snakeImage} alt="" />
