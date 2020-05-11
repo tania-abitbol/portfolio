@@ -37,8 +37,7 @@
   "scripts": {
     "prettier": "prettier --write --config .prettierrc \"src/**/*.{js,json,scss,html}\"",
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
