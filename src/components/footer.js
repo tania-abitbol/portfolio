@@ -4,7 +4,7 @@ import snakeImage from "../images/snake.png";
 import bottomArrow from "../images/buttom-arrow.png";
 import { responsiveHelpers as rh } from "../styles/utils";
 import githublogo from "../images/github.svg";
-import pdf from "../images/CV-tania2.pdf";
+import pdf from "../images/CV-Tania2.pdf";
 
 const FooterContainers = Styled.div`
 background-color:black;
