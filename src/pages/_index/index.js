@@ -102,7 +102,7 @@ export const articleData = [
     blackBoard: false,
     button: true,
     flex: "end",
-    link: "https://dribbble.com/",
+    link: "https://dribbble.com/shots/11436155-Statistics-page-Socoda",
   },
 ];
 

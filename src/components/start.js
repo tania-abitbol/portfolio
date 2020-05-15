@@ -20,7 +20,7 @@ const Counter = styled.div`
 const LoadingText = styled.p`
   font-size: 40px;
   font-weight: 100;
-  color: #f60d54;
+  color: white;
 `;
 
 const LoadingTitle = styled.h1`
@@ -30,9 +30,9 @@ const LoadingTitle = styled.h1`
 `;
 
 const LoadingBar = styled.hr`
-  background: #f60d54;
+  background: white;
   border: none;
-  height: 1px;
+  height: 3px;
   margin-top: 10px;
   width: ${({ barProgress }) => barProgress}%;
 `;

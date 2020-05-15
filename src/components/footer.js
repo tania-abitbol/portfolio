@@ -4,6 +4,7 @@ import snakeImage from "../images/snake.png";
 import bottomArrow from "../images/buttom-arrow.png";
 import { responsiveHelpers as rh } from "../styles/utils";
 import githublogo from "../images/github.svg";
+import dribblelogo from "../images/dribblelogo.svg";
 import pdf from "../images/CV-final-final.pdf";
 
 const FooterContainers = Styled.div`
@@ -104,6 +105,17 @@ align-items:center;
 }
 
 `;
+const Dribble = Styled.div`
+display:flex;
+align-items:center;
+&>a{
+  &>img{
+    margin:10px;
+  width:40px;
+}
+}
+
+`;
 export const Footer = () => (
   <FooterContainers id="myContacts">
     <Line />
@@ -127,6 +139,12 @@ export const Footer = () => (
               <img src={githublogo} alt=""></img>
             </a>
           </Github>
+          <Dribble>
+            <p>Mon Dribbble : </p>
+            <a href="https://dribbble.com/tania-abitbol" target="_blank">
+              <img src={dribblelogo} alt=""></img>
+            </a>
+          </Dribble>
         </FooterTexts>
         <FooterImages>
           <img src={snakeImage} alt="" />
