@@ -5,7 +5,7 @@ import bottomArrow from "../images/buttom-arrow.png";
 import { responsiveHelpers as rh } from "../styles/utils";
 import githublogo from "../images/github.svg";
 import dribblelogo from "../images/dribblelogo.svg";
-import pdf from "../images/CV-final-final.pdf";
+import pdf from "../images/CV-Tania-Abitbol-Dev.pdf";
 
 const FooterContainers = Styled.div`
 background-color:black;

@@ -30,7 +30,7 @@ export const articleData = [
     title: "Et qui suis-je ?",
     articleTitle: "Ma présentation",
     articleText:
-      "Actuellement étudiante chez HETIC dans le cursus bachelor web, j’ai fais le choix d’une formation pluridisciplinaire mélangeant à la fois programmation et design tout en étant tourné vers la gestion d’équipe.\r\n\nJe dédie mon temps libre à la conception de recettes, au developpement personnel ainsi qu'au sport.\r\n\nDe manière plus générale, la perspective d’être mise face à de réels challenges m’a toujours motivée et donnée envie de donner le meilleur de moi-même, que ce soit dans un cadre professionnel comme privé.\r\n\nSur le plan personnel, on dit de moi que je suis une femme souriante et énergique. Aller de l’avant est mon mot d’ordre et j’éprouve une réelle satisfaction dans la réalisation de projets collectifs.",
+      "Actuellement étudiante chez HETIC dans le cursus bachelor web, j’ai fait le choix d’une formation pluridisciplinaire mélangeant à la fois programmation et design tout en étant tournée vers la gestion d’équipe.\r\n\nJe dédie mon temps libre à la conception de recettes, au developpement personnel ainsi qu'au sport.\r\n\nDe manière plus générale, la perspective d’être mise face à de réels challenges m’a toujours motivée et donnée envie de donner le meilleur de moi-même, que ce soit dans un cadre professionnel comme privé.\r\n\nSur le plan personnel, on dit de moi que je suis une femme souriante et énergique. Aller de l’avant est mon mot d’ordre et j’éprouve une réelle satisfaction dans la réalisation de projets collectifs.",
     articleImage: girlImage,
     blackBoard: false,
     button: false,
