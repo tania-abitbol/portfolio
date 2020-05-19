@@ -5,11 +5,9 @@
  */
 
 // You can delete this file if you're not using it
-import React from "react"
-import { HelmetProvider } from "react-helmet-async"
-
-const helmetContext = {}
+import React from "react";
+import { HelmetProvider } from "react-helmet-async";
 
 export const wrapRootElement = ({ element }) => {
-  return <HelmetProvider context={helmetContext}>{element}</HelmetProvider>
-}
+  return <HelmetProvider>{element}</HelmetProvider>;
+};
