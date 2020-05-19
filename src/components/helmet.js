@@ -6,7 +6,7 @@ import eyesImage from "../images/eyes.png";
 export const HelmetComponent = () => (
   <Helmet>
     <title>Tania Abitbol</title>
-    <meta name="title" content="Tania Abitbol - Portfolio" />
+    {/* <meta name="title" content="Tania Abitbol - Portfolio" /> */}
     <meta
       name="description"
       content="Voici le Portfolio d'une étudiante en web à la recherche d'une alternance."
