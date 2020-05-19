@@ -108,7 +108,7 @@ export const articleData = [
 
 const IndexPage = () => (
   <Layout>
-    <HelmetComponent title="Tania Abitbol" />
+    <HelmetComponent />
     {articleData.map((value, index) => (
       <Article
         link={value.link}

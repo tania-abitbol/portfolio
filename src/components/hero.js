@@ -67,7 +67,9 @@ const HeroGirlImage = Styled.div`
 &>img{
   ${rh.belowLandscapeTablet`
   width: 100%;
+  
 `}
+}
 }
 
 `;
