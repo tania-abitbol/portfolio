@@ -1,12 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 import eyesImage from "../images/eyes.png";
 
 export const HelmetComponent = () => (
   <Helmet>
     <title>Tania Abitbol</title>
-    {/* <meta name="title" content="Tania Abitbol - Portfolio" /> */}
     <meta
       name="description"
       content="Voici le Portfolio d'une étudiante en web à la recherche d'une alternance."
