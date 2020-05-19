@@ -11,13 +11,13 @@ export const HelmetComponent = () => (
       name="description"
       content="Voici le Portfolio d'une étudiante en web à la recherche d'une alternance."
     />
-    <meta name="og:title" content="Tania Abitbol - Portfolio" />
+    <meta property="og:title" content="Tania Abitbol - Portfolio" />
     <meta
-      name="og:description"
+      property="og:description"
       content="Voici le Portfolio d'une étudiante en web à la recherche d'une alternance."
     />
-    <meta name="og:image" content={eyesImage} />
-    <meta name="og:image:width" content="1200" />
-    <meta name="og:image:height" content="630" />
+    <meta property="og:image" content={eyesImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
   </Helmet>
 );
