@@ -19,7 +19,7 @@ export const articleData = [
     title: "Portfolio d’une etudiante en web",
     articleTitle: "Ma recherche",
     articleText:
-      "Actuellement à la recherche d’une alternance, ou à défaut d'un stage de 2 mois dans l’univers du web.\r\n\nQuand ? En cas d'alternance, en août 2020 pour une durée de 2 ans. Et en cas de stage, en août 2020 pour une durée de 2 mois. Le rythme de l’alternance serait de 3 semaines en entreprise puis 1 semaine de formation.\r\n\nJe serais vivement intéressée par l’idée de travailler dans le domaine de la programmation.\r\n\nAvant tout, je suis à la recherche d’une entreprise dans laquelle le travail d’équipe, l’entente et le respect des valeurs humaines sont centraux afin que je puisse m’épanouir tant sur le plan humain que professionnel. ",
+      "Actuellement à la recherche de missions freelance\r\n\nJe serais vivement intéressée de travailler dans le domaine de la programmation ou du design.\r\n\nAvant tout, je suis à la recherche d’une entreprise dans laquelle le travail d’équipe, l’entente et le respect des valeurs humaines sont centraux afin que je puisse m’épanouir tant sur le plan humain que professionnel. ",
     articleImage: eyesImage,
     blackBoard: false,
     button: false,
@@ -72,7 +72,7 @@ export const articleData = [
   {
     id: "myProjets",
     title: "Des projets réalisés ? ",
-    articleTitle: "Infoquiz - Concours coddity",
+    articleTitle: "Infoquiz - Concours coddity - Gagnante",
     articleText:
       "Infoquiz est une application web crée pour la participation au concours boursecoddity 2020 sur la thématique de la découverte du monde de l’informatique et d’internet aux enfants.\r\n\nMon application web est une solution pour donner envie à l’enfant grâce, à un design agréable et amusant de s’instruire sur le thème de l’informatique et d’internet.\r\n\nLa gamification de cette application web permettra aux enfants d’acquérir de nouvelles connaissances ainsi qu’une certaine prévention des dangers du monde de l’informatique.",
     articleImage: flowerImage,
